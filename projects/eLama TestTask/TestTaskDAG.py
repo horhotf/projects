@@ -119,24 +119,32 @@ with dag:
         task_id="create_materialized_view",
         postgres_conn_id = "postgres_default",
         sql="""
-            CREATE MATERIALIZED VIEW new_users_sum_transactions
+	CREATE MATERIALIZED VIEW new_users_sum_transactions
             AS
                 WITH
                     new_users as(
-                        SELECT 
-                            u.user_id,
-                            u.email
-                        FROM users u
-                        RIGHT JOIN webinar w ON u.email = w.email
-                        WHERE u.email IS NOT NULL AND u.date_registration > '2016-04-01'
-                    )
-                    
-                    SELECT
-                        nu.email,
+						SELECT u.email, MIN(u.date_registration) as min_date
+						FROM users u
+						RIGHT JOIN webinar w ON u.email = w.email
+						WHERE u.email IS NOT NULL 
+						GROUP BY u.email
+					),
+					id_transactions_after_webinar as(
+						SELECT 
+    						u.user_id,
+							u.email
+						FROM 
+							users u
+						RIGHT JOIN new_users nu ON u.email = nu.email
+						WHERE u.email IS NOT NULL AND nu.min_date > '2016-04-01'
+					)
+					
+					SELECT
+                        t_id.email,
                         SUM(t.price) as sum_price
-                    FROM new_users nu
-                    LEFT JOIN transactions t ON nu.user_id = t.user_id
-                    GROUP BY nu.email
+                    FROM id_transactions_after_webinar t_id
+                    LEFT JOIN transactions t ON t_id.user_id = t.user_id
+                    GROUP BY t_id.email
           """,
     )
     

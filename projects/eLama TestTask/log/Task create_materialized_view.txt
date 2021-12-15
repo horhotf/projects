@@ -1,51 +1,59 @@
-*** Reading local file: /home/tk/airflow/logs/TestTask/create_materialized_view/2021-12-01T19:29:05.028320+00:00/1.log
-[2021-12-01, 23:29:13 UTC] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: TestTask.create_materialized_view manual__2021-12-01T19:29:05.028320+00:00 [queued]>
-[2021-12-01, 23:29:13 UTC] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: TestTask.create_materialized_view manual__2021-12-01T19:29:05.028320+00:00 [queued]>
-[2021-12-01, 23:29:13 UTC] {taskinstance.py:1241} INFO - 
+*** Reading local file: /home/tk/airflow/logs/TestTask/create_materialized_view/2021-12-15T18:52:14.202555+00:00/1.log
+[2021-12-15, 22:52:24 UTC] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: TestTask.create_materialized_view manual__2021-12-15T18:52:14.202555+00:00 [queued]>
+[2021-12-15, 22:52:24 UTC] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: TestTask.create_materialized_view manual__2021-12-15T18:52:14.202555+00:00 [queued]>
+[2021-12-15, 22:52:24 UTC] {taskinstance.py:1241} INFO - 
 --------------------------------------------------------------------------------
-[2021-12-01, 23:29:13 UTC] {taskinstance.py:1242} INFO - Starting attempt 1 of 1
-[2021-12-01, 23:29:13 UTC] {taskinstance.py:1243} INFO - 
+[2021-12-15, 22:52:24 UTC] {taskinstance.py:1242} INFO - Starting attempt 1 of 1
+[2021-12-15, 22:52:24 UTC] {taskinstance.py:1243} INFO - 
 --------------------------------------------------------------------------------
-[2021-12-01, 23:29:13 UTC] {taskinstance.py:1262} INFO - Executing <Task(PostgresOperator): create_materialized_view> on 2021-12-01 19:29:05.028320+00:00
-[2021-12-01, 23:29:13 UTC] {standard_task_runner.py:52} INFO - Started process 441485 to run task
-[2021-12-01, 23:29:13 UTC] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'TestTask', 'create_materialized_view', 'manual__2021-12-01T19:29:05.028320+00:00', '--job-id', '327', '--raw', '--subdir', 'DAGS_FOLDER/TestTask.py', '--cfg-path', '/tmp/tmpjepblvu4', '--error-file', '/tmp/tmpmhwam6um']
-[2021-12-01, 23:29:13 UTC] {standard_task_runner.py:77} INFO - Job 327: Subtask create_materialized_view
-[2021-12-01, 23:29:13 UTC] {logging_mixin.py:109} INFO - Running <TaskInstance: TestTask.create_materialized_view manual__2021-12-01T19:29:05.028320+00:00 [running]> on host tk-VirtualBox
-[2021-12-01, 23:29:13 UTC] {logging_mixin.py:109} WARNING - /home/tk/airflow/lib/python3.8/site-packages/airflow/models/xcom.py:323 SAWarning: TypeDecorator UtcDateTime(timezone=True) will not produce a cache key because the ``cache_ok`` flag is not set to True.  Set this flag to True if this type object's state is safe to use in a cache key, or False to disable this warning.
-[2021-12-01, 23:29:13 UTC] {logging_mixin.py:109} WARNING - /home/tk/airflow/lib/python3.8/site-packages/airflow/models/renderedtifields.py:126 SAWarning: TypeDecorator UtcDateTime(timezone=True) will not produce a cache key because the ``cache_ok`` flag is not set to True.  Set this flag to True if this type object's state is safe to use in a cache key, or False to disable this warning.
-[2021-12-01, 23:29:13 UTC] {logging_mixin.py:109} WARNING - /home/tk/airflow/lib/python3.8/site-packages/airflow/models/renderedtifields.py:162 SAWarning: Coercing Subquery object into a select() for use in IN(); please pass a select() construct explicitly
-[2021-12-01, 23:29:13 UTC] {logging_mixin.py:109} WARNING - /home/tk/airflow/lib/python3.8/site-packages/airflow/models/renderedtifields.py:159 SAWarning: TypeDecorator UtcDateTime(timezone=True) will not produce a cache key because the ``cache_ok`` flag is not set to True.  Set this flag to True if this type object's state is safe to use in a cache key, or False to disable this warning.
-[2021-12-01, 23:29:13 UTC] {taskinstance.py:1427} INFO - Exporting the following env vars:
+[2021-12-15, 22:52:24 UTC] {taskinstance.py:1262} INFO - Executing <Task(PostgresOperator): create_materialized_view> on 2021-12-15 18:52:14.202555+00:00
+[2021-12-15, 22:52:24 UTC] {standard_task_runner.py:52} INFO - Started process 12983 to run task
+[2021-12-15, 22:52:24 UTC] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'TestTask', 'create_materialized_view', 'manual__2021-12-15T18:52:14.202555+00:00', '--job-id', '334', '--raw', '--subdir', 'DAGS_FOLDER/TestTask.py', '--cfg-path', '/tmp/tmp5dc5a0v8', '--error-file', '/tmp/tmpv0zhx4fc']
+[2021-12-15, 22:52:24 UTC] {standard_task_runner.py:77} INFO - Job 334: Subtask create_materialized_view
+[2021-12-15, 22:52:24 UTC] {logging_mixin.py:109} INFO - Running <TaskInstance: TestTask.create_materialized_view manual__2021-12-15T18:52:14.202555+00:00 [running]> on host tk-VirtualBox
+[2021-12-15, 22:52:24 UTC] {logging_mixin.py:109} WARNING - /home/tk/airflow/lib/python3.8/site-packages/airflow/models/xcom.py:323 SAWarning: TypeDecorator UtcDateTime(timezone=True) will not produce a cache key because the ``cache_ok`` flag is not set to True.  Set this flag to True if this type object's state is safe to use in a cache key, or False to disable this warning.
+[2021-12-15, 22:52:24 UTC] {logging_mixin.py:109} WARNING - /home/tk/airflow/lib/python3.8/site-packages/airflow/models/renderedtifields.py:126 SAWarning: TypeDecorator UtcDateTime(timezone=True) will not produce a cache key because the ``cache_ok`` flag is not set to True.  Set this flag to True if this type object's state is safe to use in a cache key, or False to disable this warning.
+[2021-12-15, 22:52:24 UTC] {logging_mixin.py:109} WARNING - /home/tk/airflow/lib/python3.8/site-packages/airflow/models/renderedtifields.py:162 SAWarning: Coercing Subquery object into a select() for use in IN(); please pass a select() construct explicitly
+[2021-12-15, 22:52:24 UTC] {logging_mixin.py:109} WARNING - /home/tk/airflow/lib/python3.8/site-packages/airflow/models/renderedtifields.py:159 SAWarning: TypeDecorator UtcDateTime(timezone=True) will not produce a cache key because the ``cache_ok`` flag is not set to True.  Set this flag to True if this type object's state is safe to use in a cache key, or False to disable this warning.
+[2021-12-15, 22:52:24 UTC] {taskinstance.py:1427} INFO - Exporting the following env vars:
 AIRFLOW_CTX_DAG_OWNER=airflow
 AIRFLOW_CTX_DAG_ID=TestTask
 AIRFLOW_CTX_TASK_ID=create_materialized_view
-AIRFLOW_CTX_EXECUTION_DATE=2021-12-01T19:29:05.028320+00:00
-AIRFLOW_CTX_DAG_RUN_ID=manual__2021-12-01T19:29:05.028320+00:00
-[2021-12-01, 23:29:13 UTC] {base.py:70} INFO - Using connection to: id: postgres_default. Host: localhost, Port: 5432, Schema: airflow, Login: postgres, Password: ***, extra: {}
-[2021-12-01, 23:29:13 UTC] {dbapi.py:225} INFO - Running statement: 
-            CREATE MATERIALIZED VIEW new_users_sum_transactions
+AIRFLOW_CTX_EXECUTION_DATE=2021-12-15T18:52:14.202555+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-12-15T18:52:14.202555+00:00
+[2021-12-15, 22:52:24 UTC] {base.py:70} INFO - Using connection to: id: postgres_default. Host: localhost, Port: 5432, Schema: airflow, Login: postgres, Password: ***, extra: {}
+[2021-12-15, 22:52:24 UTC] {dbapi.py:225} INFO - Running statement: 
+	CREATE MATERIALIZED VIEW new_users_sum_transactions
             AS
                 WITH
                     new_users as(
-                        SELECT 
-                            u.user_id,
-                            u.email
-                        FROM users u
-                        RIGHT JOIN webinar w ON u.email = w.email
-                        WHERE u.email IS NOT NULL AND u.date_registration > '2016-04-01'
-                    )
-                    
-                    SELECT
-                        nu.email,
+						SELECT u.email, MIN(u.date_registration) as min_date
+						FROM users u
+						RIGHT JOIN webinar w ON u.email = w.email
+						WHERE u.email IS NOT NULL 
+						GROUP BY u.email
+					),
+					id_transactions_after_webinar as(
+						SELECT 
+    						u.user_id,
+							u.email
+						FROM 
+							users u
+						RIGHT JOIN new_users nu ON u.email = nu.email
+						WHERE u.email IS NOT NULL AND nu.min_date > '2016-04-01'
+					)
+					
+					SELECT
+                        t_id.email,
                         SUM(t.price) as sum_price
-                    FROM new_users nu
-                    LEFT JOIN transactions t ON nu.user_id = t.user_id
-                    GROUP BY nu.email
+                    FROM id_transactions_after_webinar t_id
+                    LEFT JOIN transactions t ON t_id.user_id = t.user_id
+                    GROUP BY t_id.email
           , parameters: None
-[2021-12-01, 23:29:13 UTC] {dbapi.py:233} INFO - Rows affected: 2
-[2021-12-01, 23:29:13 UTC] {taskinstance.py:1270} INFO - Marking task as SUCCESS. dag_id=TestTask, task_id=create_materialized_view, execution_date=20211201T192905, start_date=20211201T192913, end_date=20211201T192913
-[2021-12-01, 23:29:14 UTC] {local_task_job.py:154} INFO - Task exited with return code 0
-[2021-12-01, 23:29:14 UTC] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check
-[2021-12-01, 23:29:14 UTC] {logging_mixin.py:109} WARNING - /home/tk/airflow/lib/python3.8/site-packages/airflow/models/dag.py:1076 SADeprecationWarning: Query.value() is deprecated and will be removed in a future release.  Please use Query.with_entities() in combination with Query.scalar() (deprecated since: 1.4)
-[2021-12-01, 23:29:14 UTC] {logging_mixin.py:109} WARNING - /home/tk/airflow/lib/python3.8/site-packages/airflow/models/dag.py:1076 SADeprecationWarning: Query.values() is deprecated and will be removed in a future release.  Please use Query.with_entities() (deprecated since: 1.4)
+[2021-12-15, 22:52:24 UTC] {dbapi.py:233} INFO - Rows affected: 1
+[2021-12-15, 22:52:24 UTC] {taskinstance.py:1270} INFO - Marking task as SUCCESS. dag_id=TestTask, task_id=create_materialized_view, execution_date=20211215T185214, start_date=20211215T185224, end_date=20211215T185224
+[2021-12-15, 22:52:24 UTC] {local_task_job.py:154} INFO - Task exited with return code 0
+[2021-12-15, 22:52:24 UTC] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2021-12-15, 22:52:24 UTC] {logging_mixin.py:109} WARNING - /home/tk/airflow/lib/python3.8/site-packages/airflow/models/dag.py:1076 SADeprecationWarning: Query.value() is deprecated and will be removed in a future release.  Please use Query.with_entities() in combination with Query.scalar() (deprecated since: 1.4)
+[2021-12-15, 22:52:24 UTC] {logging_mixin.py:109} WARNING - /home/tk/airflow/lib/python3.8/site-packages/airflow/models/dag.py:1076 SADeprecationWarning: Query.values() is deprecated and will be removed in a future release.  Please use Query.with_entities() (deprecated since: 1.4)
 
